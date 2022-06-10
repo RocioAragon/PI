@@ -1,0 +1,702 @@
+/*Rocío Aragón Escamilla
+2 DAW*/
+
+html {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/*CUERPO ENTERO CON FONDO*/
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*MENÚ*/
+
+nav {
+    background-color: white;
+    display: flex;
+    flex-direction: fila;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px -6px grey;
+}
+
+
+/* CARRUSEL */
+
+.carousel {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#imagen {
+    width: 100%;
+    height: 580px;
+    background-size: cover;
+}
+
+#play,
+#stop {
+    width: 30px;
+    height: 30px;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52%;
+}
+
+#retroceder {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 27%;
+    margin-left: 2%;
+    color: white;
+}
+
+#avanzar {
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: 27%;
+    margin-right: 2%;
+    color: white;
+}
+
+.titulo {
+    text-align: left;
+    font-size: large;
+    font-weight: 300;
+}
+
+.letra {
+    color: rgb(97, 97, 97);
+}
+
+.cuadrotexto {
+    color: grey;
+    width: 300px;
+    height: 30px;
+}
+
+.botonform {
+    font-family: Questrial, sans-serif;
+    font-size: smaller;
+    border: 0px;
+    color: white;
+    background-color: rgb(0, 44, 0);
+    text-align: center;
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+}
+
+.botonform:hover {
+    opacity: 0.9;
+}
+
+
+/*Botones de RRSS e Iconos*/
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 25px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: rgb(0, 66, 0);
+}
+
+.fa-twitter {
+    color: rgb(0, 66, 0);
+}
+
+.fa-instagram {
+    color: rgb(0, 66, 0);
+}
+
+
+/*Formulario*/
+
+.tituloContact {
+    padding-top: 90px;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+.contactform {
+    font-style: rgb(75, 75, 75);
+    margin: 0 auto;
+    font-family: Questrial, sans-serif;
+    align-items: center;
+    margin: auto;
+    width: 45%;
+    height: auto;
+}
+
+.cuadrotexto2 {
+    color: grey;
+    width: 700px;
+    height: 30px;
+}
+
+.cuadrotexto3 {
+    color: grey;
+    width: 700px;
+}
+
+
+/*Botón del formulario*/
+
+.button {
+    display: inline-block;
+    background-color: rgb(0, 51, 0);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 125px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+form .error {
+    color: #ff0000;
+}
+
+
+/*Errores en formulario*/
+
+.errores {
+    font-weight: bold;
+    background-color: white;
+    color: rgb(187, 1, 1);
+    align-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+
+/*Sobre mi*/
+
+.sobremi {
+    font-family: Helvetica, arial, sans-serif;
+    font-size: large;
+    background-color: white;
+    width: 75%;
+    padding: 5%;
+    padding-left: 13%;
+    display: flex;
+    flex-direction: fila;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.parafosobremi {
+    width: 58%;
+}
+
+.fotosobremi {
+    width: 38%;
+    height: 38%;
+    border-radius: 50%;
+}
+
+.name {
+    color: rgb(58, 58, 58);
+    font-family: Questrial, sans-serif;
+    margin: auto;
+    width: 10%;
+}
+
+
+/*GALERIA*/
+
+.galeria {
+    background-color: white;
+    width: 100%;
+    padding: 5%;
+    padding-left: 18%;
+    padding-right: 13%;
+    display: flex;
+    flex-direction: fila;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.categoria {
+    font-weight: 200;
+    color: rgb(100, 100, 100);
+    font-family: Questrial, sans-serif;
+    padding-left: 35%;
+}
+
+.name {
+    color: rgb(100, 100, 100);
+    padding-left: 9%;
+}
+
+.imagenMuestra {
+    width: 78%;
+    height: 80%;
+}
+
+.imagenMuestra:hover {
+    transform: scale(1.1);
+    opacity: 0.80;
+}
+
+.galeria1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.galeria2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+/*______________________________________________________________________________*/
+
+
+/*GALERIAS 1, 2 Y 3*/
+
+.fila>.columna {
+    padding-left: 19%;
+    padding-right: 0%;
+    padding-top: 20px;
+    width: auto;
+}
+
+.columna {
+    width: 50%;
+}
+
+.fila:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Crea cuatro columnaas iguales que flotan una al lado de la otra */
+
+.columna {
+    float: left;
+    width: 0%;
+}
+
+
+/*Fondo */
+
+.contenido {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(26, 25, 25, 0.699);
+}
+
+
+/* Contenido */
+
+.contenidoFotoVertical {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    /*Tamaño del contenido de las fotos que se pasan*/
+    width: 28%;
+    max-width: 1000px;
+}
+
+.contenidoFotoHorizontal {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    /*Tamaño del contenido de las fotos que se pasan*/
+    width: 65%;
+    max-width: 999px;
+}
+
+
+/* TBotón de cerrar */
+
+.cerrarCursor {
+    color: white;
+    position: absolute;
+    /*Top y right de la x para cerrar el album*/
+    top: 110px;
+    right: 90px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cerrarCursor:hover,
+.cerrarCursor:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Ocultar las diapositivas por defecto */
+
+.misFotos {
+    display: none;
+}
+
+
+/* Botones siguiente y anterior */
+
+.anterior,
+.siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+/* Botón siguiente" a la derecha */
+
+.siguiente {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.siguiente:hover,
+.anterior:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Al pasar el ratón, agregue un color de fondo negro con un poco de transparencia */
+
+.numeroDeFoto {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img.fotoGaleria {
+    /*Redimension de imagenes antes de album*/
+    transition: 0.3s;
+    width: 310px;
+}
+
+.fotoGaleria:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imgJS {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*FIRMA*/
+
+.firma {
+    width: 310px;
+    height: 150px;
+}
+
+.table th {
+    background-color: black;
+    color: white;
+}
+
+body {
+    align-content: center;
+}
+
+.button {
+    background-color: rgb(5, 78, 151);
+    border-radius: 7px;
+    color: aliceblue;
+    border-style: none;
+    height: 30px;
+}
+
+.button:hover {
+    background-color: dodgerblue;
+}
+
+.form {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+
+/*INICIO DESPLEGABLE*/
+
+
+/*______________________________________________________________________________*/
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dfe3e8;
+    border-radius: 0;
+}
+
+.nav-link img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.navbar .navbar-brand {
+    padding-left: 0;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.navbar .navbar-brand b {
+    color: #5c6ac4;
+}
+
+.navbar .form-inline {
+    display: inline-block;
+}
+
+.navbar .navbar-nav {
+    position: relative;
+}
+
+.navbar a,
+.navbar a:active {
+    color: #888;
+    font-size: 15px;
+    background: transparent;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding-right: 35px;
+    border-color: #dfe3e8;
+    border-radius: 4px !important;
+    box-shadow: none
+}
+
+.search-box .input-group-text {
+    min-width: 35px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 7px;
+    height: 100%;
+}
+
+.search-box i {
+    color: #a0a5b1;
+    font-size: 19px;
+}
+
+.navbar .btn-primary,
+.navbar .btn-primary:active {
+    color: #fff;
+    background: #5c6ac4 !important;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: none;
+    min-width: 120px;
+    margin: 2px 0;
+}
+
+.navbar .btn-primary:hover,
+.navbar .btn-primary:focus {
+    color: #fff;
+    background: #5765c1 !important;
+}
+
+.navbar .action-buttons .dropdown-toggle::after {
+    display: none;
+}
+
+.search-box .btn span {
+    transform: scale(0.9);
+    display: inline-block;
+}
+
+.navbar .nav-item i {
+    font-size: 18px;
+}
+
+.navbar .dropdown-item i {
+    font-size: 16px;
+    min-width: 22px;
+}
+
+.navbar .dropdown-menu {
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.navbar .navbar-nav .dropdown-menu a {
+    padding: 8px 20px;
+    line-height: normal;
+}
+
+.navbar .navbar-form {
+    border: none;
+}
+
+.navbar .navbar-form-wrapper {
+    padding: 0 15px;
+}
+
+.navbar .login-form label {
+    color: #888;
+    font-weight: normal;
+}
+
+.navbar .dropdown-menu.login-form {
+    width: 280px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    font-size: 14px;
+}
+
+.navbar .navbar-nav .dropdown-menu.login-form a {
+    padding: 0 !important;
+    color: #5c6ac4;
+    font-weight: normal;
+}
+
+.navbar .navbar-nav .dropdown-menu.login-form a:hover {
+    text-decoration: underline;
+}
+
+.navbar .dropdown-menu.login-form .checkbox-inline {
+    margin-top: 10px;
+}
+
+@media (min-width: 1200px) {
+    .form-inline .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .dropdown-menu.login-form {
+        width: 100%;
+        padding: 10px 15px;
+        background: transparent;
+        border: none;
+    }
+    .navbar .form-inline {
+        display: block;
+    }
+    .navbar .input-group {
+        width: 100%;
+    }
+    .navbar .navbar-nav .btn-primary,
+    .navbar .navbar-nav .btn-primary:active {
+        display: block;
+    }
+}
+
+
+/*FORMILARIO DE REGISTRO*/
+
+.registerForm {
+    margin: 50%;
+    padding-left: 50%;
+}
+
+#g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -78px 0 0 0 !important;
+    width: 302px !important;
+    height: 76px !important;
+    z-index: -999999;
+    opacity: 0;
+}
