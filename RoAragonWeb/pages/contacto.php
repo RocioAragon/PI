@@ -256,7 +256,7 @@ if (isset($_POST['cierre'])) {
                             <br>
                             <div class="form-group row">
                                 <div class="col-md-12 text-center">
-                                    <button id="enviar" name="enviar" type="submit" class="btn btn-dark btn-lg">Enviar</button>
+                                    <button id="enviar" name="enviar" value="enviar" type="submit" class="btn btn-dark btn-lg">Enviar</button>
                                     <input id="borrar" name="borrar" type="reset" class="btn btn-dark btn-lg" value="Borrar">
                                 </div>
                             </div>

@@ -1,6 +1,7 @@
  <!--Rocío Aragón Escamilla
 2 DAW-->
 <php lang="en">
+    
 <?php 
 session_start(); 
 if (isset($_POST["dni"]) && isset($_POST["pass"])) {
@@ -43,6 +44,11 @@ if (isset($_POST['cierre'])) {
 	$_SESSION["sesion_iniciada"] = false;
 	session_destroy();
 	header("Refresh:0");
+}
+
+$enviar = $_POST['enviar'];
+if(!$enviar){
+    header("Location: contacto.php");
 }
 
 ?>
@@ -209,9 +215,19 @@ if (isset($_POST['cierre'])) {
     <br>
     <br>   
 <?php
+
 //librerias
 require '../PHPMailer/PHPMailerAutoload.php';
- 
+require('../phpdotenv/vendor/autoload.php'); 
+
+//Cargamos las variables de entorno
+$dotenv = Dotenv\Dotenv::createImmutable('../');
+$dotenv->load();
+
+//Obtenemos las variables de entorno
+$EMAIL_USER = $_ENV['EMAIL_USER'];
+$EMAIL_PASSWORD = $_ENV['EMAIL_PASSWORD'];
+
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 $mail->IsSMTP();
@@ -222,8 +238,8 @@ $mail->SMTPAuth = true;
 $mail->SMTPSecure = 'tls'; //seguridad
 $mail->Host = "smtp.gmail.com"; // servidor smtp
 $mail->Port = 587; //puerto
-$mail->Username ='rocioaragon.14@campuscamara.es'; //nombre usuario
-$mail->Password = 'Roxas123'; //contraseña
+$mail->Username = $EMAIL_USER; //nombre usuario
+$mail->Password = $EMAIL_PASSWORD; //contraseña
  
 //Agregar destinatario
 $mail->AddAddress("rocioaragon.14@campuscamara.es");
@@ -234,7 +250,9 @@ $mail->Body = "Remitente: ".$_POST['nombre']." ".$_POST['apellidos']."\nEmail: "
 if ($mail->Send()) {
     echo '<h1 style="text-align:center"> Email enviado correctamente </h1>';
 } else {
-    echo 'NO ENVIADO';
+    //print_r($mail);
+    echo 'ERROR. EMAIL NO ENVIADO: ' . $mail->ErrorInfo;
+    //echo '<h1 style="text-align:center"> ERROR. EMAIL NO ENVIADO. </h1>';
 }
 
 ?>
